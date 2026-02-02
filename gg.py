@@ -27,12 +27,14 @@ GOLD = (255, 215, 0)
 DARK_RED = (100, 20, 20)
 STONE = (120, 100, 80)
 
+shoot_sound = None
 try:
     shoot_sound = pygame.mixer.Sound('shoot.wav')
     shoot_sound.set_volume(0.3)
 except:
     pass
 
+death_sound = None
 try:
     death_sound = pygame.mixer.Sound('death.wav')
     death_sound.set_volume(0.5)
